@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern AI Quotes & Website</title>
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="aiquote.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/icon.png" alt="Logo" class="navbar-logo" />
+  </div>
+
+  <!--  Hamburger button -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Main Content -->
+  <main id="home" class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        Welcome to AI Quotes! We provide inspirational quotes powered by artificial intelligence 
+        from multiple sources. Our platform is designed to motivate, inspire, and entertain.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <h3>Daily Quotes</h3>
+          <p>Get daily motivational and inspirational quotes delivered to you.</p>
+        </div>
+        <div class="service-card">
+          <h3>Quote Collections</h3>
+          <p>Access categorized quotes by famous authors and topics.</p>
+        </div>
+        <div class="service-card">
+          <h3>Custom Quotes</h3>
+          <p>Generate AI-based custom quotes for social media and projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Box -->
+    <section class="quote-section">
+      <div class="quote-box">
+        <p id="quote">Loading...</p>
+        <span id="author"></span>
+        <div class="controls">
+          <button id="prevBtn">← Previous</button>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <h2>Blog</h2>
+      <div class="blog-container">
+        <article class="blog-card">
+          <h3>How Quotes Inspire Creativity</h3>
+          <p>Discover how reading quotes can boost your creative thinking and motivation.</p>
+        </article>
+        <article class="blog-card">
+          <h3>Top 10 Quotes for Productivity</h3>
+          <p>Explore our curated list of quotes that enhance focus and productivity.</p>
+        </article>
+        <article class="blog-card">
+          <h3>Using AI for Daily Inspiration</h3>
+          <p>Learn how artificial intelligence can generate personalized inspirational content.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p> Webpage Design using API from Quotable, ZenQuotes & DummyJSON  | &copy; 2025 AI Quotes</p>
+  </footer>
+
+  <!-- Firebase SDKs only -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+  <!-- Your JS handles Firebase setup + quotes -->
+  <script src="aiquote.js"></script>
+
+</body>
+</html>
